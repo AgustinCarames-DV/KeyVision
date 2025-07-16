@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Made Tommy Regular;
+    src: url(fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+@font-face {
+    font-family: Made Tommy Bold;
+    src: url(fonts/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf);
+}
+@font-face {
+    font-family: Made Tommy Medium;
+    src: url(fonts/MADE\ TOMMY\ Medium_PERSONAL\ USE.otf);
+}
+
+.blur-in{animation:blur-in 0.4s linear both} @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+body{
+    background-image:url('img/fondo-pagina-01.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: rgb(0, 0, 0);
+    animation-name: blur-in;
+    animation-duration: 2s;
+}
+
+header{
+    font-family: 'Made Tommy Bold';
+    font-size: 20px;
+    width: 100%;
+    color:white;
+    padding: 40px 0;
+    background-color: #111111;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+width: 250px;
+height: 60px;
+background-image: url('img/logo.png');
+background-size: contain;
+background-repeat: no-repeat;
+text-indent: -9999px;
+overflow: hidden;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px; 
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+nav ul li a:hover{
+    background-color: #ff3939;
+    padding: 5px 10px;
+    
+    
+}
+
+
+
+
+.contenedor{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+#banner{
+    width: 1200px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#banner img{
+    width: 1200px;
+    border-radius: 8px;
+}
+
+#contenido{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    gap: 15px;
+    justify-content: center ;
+}
+
+
+.columna{
+    width: 400px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    background-color: #111111;
+    color: #e5e5e8;
+}
+
+.columna img {
+    width: 370px;
+    height: 555px;
+    border-radius: 8px;
+}
+
+.columna h2{
+    font-family: 'Made Tommy Medium';
+    font-size: 30px;
+    border-bottom: 2px solid #e5e5e8;
+    padding-bottom: 5px;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+.columna p{
+    margin-top: 5px;
+    padding: 5px;
+    font-family: 'Made Tommy Regular';
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: -1px; 
+    hyphens: auto;
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 10% cover 45%;
+    animation-fill-mode: both;
+}
+
+.columna-derecha{
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    background-color: #111111;
+    color: #e5e5e8;
+    
+}
+.columna-derecha li{
+    list-style-type: none;
+}
+.columna-derecha img{
+    width: 270px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+}
+
+footer{
+    width: 100%;
+    background-color: #111111;
+    color: #e5e5e8;
+    padding: 20px 0;
+    margin-top: 20px;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 5% cover 15%;
+    animation-fill-mode: both;
+}
+
+footer ul{
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 15px;
+padding: 10px 0;    
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a i{
+    color: #fff;
+        position: absolute;
+        top: 21px;
+        left: 21px;
+}
+
+footer p{
+    font-family: 'Made Tommy Medium';
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.caja {
+    display: flex;
+    width: 1200px;
+    padding: 20px;
+    margin-top: 60px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    background-color: #111111;
+    color: #e5e5e8;
+}
+
+.caja img{
+    padding-right: 40px;
+    width: 500px;
+}
+
+cajatexto{
+    flex: 1;
+}
+
+.caja-texto h2{
+    font-family: 'Made Tommy Medium';
+    font-size: 30px;
+}
+
+.caja-texto p{
+    font-family: 'Made Tommy Regular';
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 0px;
+}
+
+.aplicacion-logo{
+    width: 1200px;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #111111;
+    color: #e5e5e8;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+}
+
+.contenedor-aplicacion {
+    text-align: center;
+}
+
+.contenedor-aplicacion h2{
+    font-family: 'Made Tommy Medium';
+    font-size: 30px;
+}
+
+.imagenes-aplicacion{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imagen-aplicacion{
+    padding: 10px;
+    width: 366px;
+    flex: 1;
+}
+
+.imagen-aplicacion img {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 8px;
+}
+
+.imagen-aplicacion h3{
+    text-align: center;
+    font-family: 'Made Tommy Medium';
+    font-size: 20px;
+}
+
+.imagen-aplicacion p{
+    padding: 10px;
+    font-family: 'Made Tommy Regular';
+    font-size: 15px;
+    text-align: center;
+    text-justify: inter-word;
+}
+.imagen-aplicacion img:hover{
+    scale: 1.1;
+    padding: 10px;
+}
+.pagina-en-construccion{
+    text-align: center;
+    display: flex;
+    width: 1200px;
+    padding: 20px;
+    margin-top: 60px;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    background-color: #111111;
+    color: #e5e5e8;
+}
+
+.pagina-en-construccion h2{
+    text-align: center;
+    font-family: 'Made Tommy Medium';
+    font-size: 70px;
+}
+
+.contenedor-footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contenedor-footer h2{
+    text-align: center;
+    font-family: 'Made Tommy Medium';
+    font-size: 20px;
+}
+.contenedor-footer p{
+    text-align: center;
+    font-family: 'Made Tommy Regular';
+    font-size: 15px;
+}
+.contenedor-footer img{
+    height: 40px;
+}
+
+.contenedor-footer img:hover{
+    scale: 1.1;
+}
+
+.galeria{
+    background-image:url('img/DegradadoBlanco.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: rgb(0, 0, 0);
+    animation-name: blur-in;
+    animation-duration: 2s;
+}
+
+.kv-galeria {
+  background-color: #111111;
+  padding: 20px;
+}
+
+.kv-galeria-contenedor {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.kv-galeria-texto {
+  flex: 1;
+  max-width: 280px;
+}
+
+.kv-galeria-texto h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Made Tommy Medium';
+    border-bottom: 2px solid #e5e5e8;
+    padding-bottom: 5px;
+    
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.kv-galeria-texto p {
+    font-family: 'Made Tommy Regular';
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 0px; 
+    hyphens: auto;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.kv-galeria-grid {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.kv-galeria-grid img {
+  width: 380px;
+  display: block;
+  border-radius: 8px;
+  height: 453px;
+  
+}
+
+
+.contacto{
+    background-image:url('img/Degradado2.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    color: rgb(0, 0, 0);
+    animation-name: blur-in;
+    animation-duration: 2s;
+}
+
+.kv-servicios-titulo {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Made Tommy Medium';
+    border-bottom: 2px solid #e5e5e8;
+}
+
+.kv-servicios-layout {
+  display: flex;
+  flex: 2;
+  gap: 40px;
+}
+.servicios{
+    margin-top: 51.5px;
+}
+.servicios h4 {
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Made Tommy Medium';
+    border-bottom: 2px solid #e5e5e8;
+    margin-bottom: 20px;
+  text-transform: uppercase;
+
+  view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show, color;
+
+    animation-range: entry -10% cover 40%;
+    animation-fill-mode: both;
+}
+
+.servicios p {
+    text-align: right;
+    font-family: 'Made Tommy Regular';
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show, color;
+
+    animation-range: entry -10% cover 40%;
+    animation-fill-mode: both;
+}
+.caja-form {
+    display: flex;
+    width: 1200px;
+    padding: 20px;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    background-color: #111111;
+    color: #e5e5e8;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show, color;
+
+    animation-range: entry -10% cover 40%;
+    animation-fill-mode: both;
+    
+}
+
+.formulario{
+    width: 50%;
+    padding: 30px 40px;
+    
+}
+
+.formulario h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Made Tommy Medium';
+
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.datos-form{
+    width: 100%;
+    border: 2px solid #616161;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.datos-form input{
+    flex: 1;
+    font-family: 'Made Tommy Regular';
+    background-color: transparent;
+    border: 0;
+    outline: 0; 
+    font-size: 12px;
+    color: #e5e5e8;
+}
+
+.datos-form input::placeholder{
+    font-family: 'Made Tommy Regular';
+    color: #e5e5e8;
+}
+
+.btn{
+    width: 290px;
+    border-radius: 70px ;
+    border: 0;
+    outline: 0;
+    font: 40px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e5e5e8;
+    font-family: 'Made Tommy Medium';
+}
+
+.formulario i{
+    color: #ff3939;
+}
